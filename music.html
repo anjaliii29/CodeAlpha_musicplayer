@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-like Music Player</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">Music Player</div>
+            <ul class="nav">
+                <li>Home</li>
+                <li>Search</li>
+                <li>Your Library</li>
+            </ul>
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li>Chill Vibes</li>
+                    <li>Top Hits</li>
+                    <li>Workout Mix</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="player">
+                <img id="album-art" src="album1.jpg" alt="Album Art">
+                <h2 id="song-title">Song Name</h2>
+                <audio id="audio" src="song1.mp3"></audio>
+                <div class="controls">
+                    <button id="prev">⏮</button>
+                    <button id="play">▶</button>
+                    <button id="next">⏭</button>
+                </div>
+                <input type="range" id="progress" value="0">
+            </div>
+        </div>
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
